@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harshini Chowdary Kilari | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="profile-container">
+      <img src="images/IMG_4849.jpeg" alt="Harshini Chowdary" class="profile-pic" />
+    </div>
+
+    <h1>Harshini Chowdary Kilari</h1>
+
+    <p class="tagline">
+      Transforming complex data into compelling visual stories through interactive dashboards and user-centered design
+    </p>
+
+    <div class="badge-container">
+      <span class="badge">🎨 Data Visualization</span>
+      <span class="badge">⚛️ React Developer</span>
+      <span class="badge">☁️ AWS Certified</span>
+      <span class="badge">🎓 MS Computer Science</span>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="filter-container">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="visualization">Data Viz</button>
+      <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+      <button class="filter-btn" data-filter="cloud">Cloud/Infra</button>
+    </div>
+
+    <div class="bento-grid" id="projects-grid">
+      <div class="project-card" data-category="visualization">
+        <div class="project-icon">📊</div>
+        <h3>Content Performance Analytics Dashboard</h3>
+        <p>
+          Interactive dashboard visualizing engagement metrics across 15+ regions and 50+ content categories.
+          Built with thoughtful aggregation logic, responsive design, and data storytelling principles.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Recharts</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Vite</span>
+        </div>
+        <div class="project-links">
+          <a href="https://content-performance-dashboard-mu.vercel.app/" class="project-link">Live Demo →</a>
+          <a href="https://github.com/harshini090/content-performance-dashboard" class="project-link" target="_blank" rel="noreferrer">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="fullstack">
+        <div class="project-icon">🏘️</div>
+        <h3>Real Estate Management System</h3>
+        <p>
+          Full-stack platform integrating data from APIs and relational databases, serving 1000+ data points daily.
+          Features admin dashboards with property analytics and transaction visualizations.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Django</span>
+          <span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">REST APIs</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/harshini090/MYHackathon" class="project-link" target="_blank" rel="noreferrer">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="fullstack">
+        <div class="project-icon">🧘</div>
+        <h3>Kokoro Wellness App</h3>
+        <p>
+          Wellness tracking application with interactive mood visualizations and progress charts.
+          Designed with simplicity, data accessibility, and user experience at the core.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">Svelte</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">Express</span>
+          <span class="tech-tag">Chart.js</span>
+        </div>
+        <div class="project-links">
+          <a href="https://kokoro-35lbfoxj7-harshs-projects-5bb15c7b.vercel.app/" class="project-link">View Details →</a>
+          <a href="https://github.com/harshini090/kokoro" class="project-link" target="_blank" rel="noreferrer">GitHub →</a>
+        </div>
+      </div>
+    </div>
+    <h2 class="section-title">Experience</h2>
+    <div class="experience-timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3>Cloud Infrastructure Intern</h3>
+              <p class="company">Find Me LLC • Remote</p>
+            </div>
+            <span class="timeline-date">Dec 2025 - Present</span>
+          </div>
+          <ul class="experience-bullets">
+            <li>Support backend cloud infrastructure on AWS using EC2, S3, IAM, VPC, and Lambda services</li>
+            <li>Monitor system performance metrics and create dashboards for tracking service reliability</li>
+            <li>Document API architectures and deployment workflows for engineering team collaboration</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">AWS</span>
+            <span class="tech-tag">Lambda</span>
+            <span class="tech-tag">EC2</span>
+            <span class="tech-tag">S3</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3>Classroom Technology Assistant</h3>
+              <p class="company">University of Cincinnati, College of Nursing</p>
+            </div>
+            <span class="timeline-date">Nov 2025 - Present</span>
+          </div>
+          <ul class="experience-bullets">
+            <li>Deliver Tier II technical support for 20+ technology-enabled classrooms with Windows and macOS systems</li>
+            <li>Install and maintain classroom hardware, PCs, peripherals, and AV equipment to minimize downtime</li>
+            <li>Troubleshoot network connectivity, software compatibility, and hardware failures</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">Windows</span>
+            <span class="tech-tag">macOS</span>
+            <span class="tech-tag">Hardware Support</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3>Graduate Assistant - IT Support & Documentation</h3>
+              <p class="company">University of Cincinnati, CEAS</p>
+            </div>
+            <span class="timeline-date">Dec 2024 - Oct 2025</span>
+          </div>
+          <ul class="experience-bullets">
+            <li>Provided technical support for 100+ Windows endpoints using ServiceNow ticketing workflows</li>
+            <li>Managed Active Directory accounts, OS imaging, and SCCM deployments for faculty and staff</li>
+            <li>Created technical documentation and knowledge base articles for recurring IT issues</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">ServiceNow</span>
+            <span class="tech-tag">Active Directory</span>
+            <span class="tech-tag">SCCM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3>Research Assistant - Data Engineering</h3>
+              <p class="company">KL University</p>
+            </div>
+            <span class="timeline-date">Jun 2023 - May 2024</span>
+          </div>
+          <ul class="experience-bullets">
+            <li>Developed Python pipelines processing 10,000+ audio records with data preprocessing automation</li>
+            <li>Created visualization scripts to communicate research findings to non-technical stakeholders</li>
+            <li>Reduced data preprocessing time by 35% through parallel processing optimization</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">Data Processing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3>Software Development Intern</h3>
+              <p class="company">Juniper Networks • Remote</p>
+            </div>
+            <span class="timeline-date">Dec 2022 - Feb 2023</span>
+          </div>
+          <ul class="experience-bullets">
+            <li>Built backend automation services using Node.js and AWS, processing 10,000+ operational events daily</li>
+            <li>Increased test coverage by 25%, reducing production bugs by 35%</li>
+            <li>Participated in Agile sprints, code reviews, and CI/CD deployments</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">AWS</span>
+            <span class="tech-tag">CI/CD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Certifications</h2>
+    <div class="certifications-grid">
+      <div class="cert-card">
+        <div class="cert-icon">☁️</div>
+        <h3>AWS Certified Developer - Associate</h3>
+        <p class="cert-issuer">Amazon Web Services</p>
+        <p class="cert-date">2026</p>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon">☁️</div>
+        <h3>AWS Certified Cloud Practitioner</h3>
+        <p class="cert-issuer">Amazon Web Services</p>
+        <p class="cert-date">2026</p>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon">📊</div>
+        <h3>OCI Data Science Professional</h3>
+        <p class="cert-issuer">Oracle Cloud Infrastructure</p>
+        <p class="cert-date">2025</p>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon">🎓</div>
+        <h3>Red Hat Certified Enterprise Application Developer</h3>
+        <p class="cert-issuer">Red Hat</p>
+        <p class="cert-date">2024</p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Frontend & Visualization</h3>
+        <div class="skill-items">
+          <span class="skill-item">React</span>
+          <span class="skill-item">JavaScript</span>
+          <span class="skill-item">Recharts</span>
+          <span class="skill-item">Svelte</span>
+          <span class="skill-item">HTML/CSS</span>
+          <span class="skill-item">Vite</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Backend & Database</h3>
+        <div class="skill-items">
+          <span class="skill-item">Node.js</span>
+          <span class="skill-item">Django</span>
+          <span class="skill-item">REST APIs</span>
+          <span class="skill-item">PostgreSQL</span>
+          <span class="skill-item">Python</span>
+          <span class="skill-item">SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Cloud & DevOps</h3>
+        <div class="skill-items">
+          <span class="skill-item">AWS</span>
+          <span class="skill-item">EC2</span>
+          <span class="skill-item">S3</span>
+          <span class="skill-item">Lambda</span>
+          <span class="skill-item">Git/GitHub</span>
+          <span class="skill-item">CI/CD</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Design & Tools</h3>
+        <div class="skill-items">
+          <span class="skill-item">Figma</span>
+          <span class="skill-item">UI/UX</span>
+          <span class="skill-item">Data Storytelling</span>
+          <span class="skill-item">Agile</span>
+          <span class="skill-item">Typography</span>
+          <span class="skill-item">Color Theory</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-section">
+      <h2 class="section-title">Let's Connect</h2>
+      <p style="max-width: 600px; margin: 0 auto; color: var(--text-dim);">
+        I'm currently seeking internship opportunities in data visualization, frontend development,
+        and full-stack engineering. Let's build something amazing together!
+      </p>
+      <div class="contact-links">
+        <a href="mailto:harshinichowdarykilari@gmail.com" class="contact-btn">📧 Email Me</a>
+        <a href="https://linkedin.com/in/harshinichowdarykilari" class="contact-btn" target="_blank" rel="noreferrer">💼 LinkedIn</a>
+        <a href="https://github.com/harshini090" class="contact-btn" target="_blank" rel="noreferrer">💻 GitHub</a>
+        <a href="resumedv.pdf" class="contact-btn" download>📄 Resume</a>
+      </div>
+    </div>
+  </div>
+
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
