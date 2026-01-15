@@ -193,9 +193,6 @@ body.light-mode .badge:hover{
   border-radius:2px;
 }
 
-/* =========================
-   FILTER BUTTONS
-   ========================= */
 .filter-container{
   display:flex;
   gap:1rem;
@@ -233,9 +230,6 @@ body.light-mode .filter-btn.active{
   box-shadow:0 8px 20px rgba(244,162,97,.15);
 }
 
-/* =========================
-   PROJECT GRID / CARDS
-   ========================= */
 .bento-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
@@ -368,14 +362,11 @@ body.light-mode .tech-tag{
   transform:translateX(5px);
 }
 
-/* =========================
-   EXPERIENCE TIMELINE (FIXED ALIGNMENT + PASTEL)
-   ========================= */
 .experience-timeline{
-  --rail-x:26px;        /* ✅ one control for rail + dot */
+  --rail-x:26px;        
   position:relative;
   margin-bottom:5rem;
-  padding-left:0;       /* ✅ don't shift container */
+  padding-left:0;       
 }
 
 .experience-timeline::before{
@@ -476,8 +467,6 @@ body.light-mode .tech-tag{
   color:var(--accent);
   font-size:1.2rem;
 }
-
-/* Pastel-specific tweaks (keeps your warm look) */
 body.light-mode .timeline-dot{
   box-shadow:0 0 15px rgba(244,162,97,.25);
 }
@@ -490,9 +479,7 @@ body.light-mode .timeline-content:hover{
   box-shadow:0 8px 25px rgba(244,162,97,.10);
 }
 
-/* =========================
-   CERTIFICATIONS
-   ========================= */
+/* CERTIFICATIONS */
 .certifications-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
@@ -550,9 +537,7 @@ body.light-mode .cert-card:hover{
 
 body.light-mode .cert-date{ color:#e76f51; }
 
-/* =========================
-   SKILLS
-   ========================= */
+/* SKILLS */
 .skills-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
@@ -602,9 +587,7 @@ body.light-mode .skill-category:hover{
 body.light-mode .skill-category h3{ color:#e76f51; }
 body.light-mode .skill-item{ background:rgba(244,162,97,.06); }
 
-/* =========================
-   CONTACT
-   ========================= */
+/*CONTACT */
 .contact-section{
   text-align:center;
   padding:4rem 2rem;
@@ -653,9 +636,7 @@ body.light-mode .contact-btn:hover{
   box-shadow:0 12px 30px rgba(244,162,97,.20);
 }
 
-/* =========================
-   THEME TOGGLE
-   ========================= */
+/* THEME TOGGLE */
 .theme-toggle{
   position:fixed;
   bottom:2rem;
@@ -704,4 +685,22 @@ body.light-mode .theme-toggle:hover{
 
   .timeline-header{ flex-direction:column; }
   .certifications-grid{ grid-template-columns:1fr; }
+}
+/* Global link styling (better than default blue/purple) */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* If you want it slightly softer than accent */
+a.subtle-link {
+  color: var(--text-dim);
+}
+a.subtle-link:hover {
+  color: var(--accent);
 }
