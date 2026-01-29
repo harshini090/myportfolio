@@ -3,333 +3,535 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harshini Chowdary Kilari | Portfolio</title>
+  <title>Harshini Chowdary Kilari — Portfolio</title>
+  
+  <!-- Fonts: Distinctive serif for display + refined sans for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=General+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css" />
+  
+  <!-- Preload critical assets -->
+  <link rel="preload" as="image" href="images/IMG_4849.jpeg" />
 </head>
 
 <body>
-  <header>
-    <div class="profile-container">
-      <img src="images/IMG_4849.jpeg" alt="Harshini Chowdary" class="profile-pic" />
+  <!-- Subtle noise texture overlay -->
+  <div class="noise-overlay"></div>
+  
+  <!-- Floating Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">HCK</a>
+      <div class="nav-menu">
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <button class="theme-toggle" aria-label="Toggle theme">
+        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
     </div>
+  </nav>
 
-    <h1>Harshini Chowdary Kilari</h1>
-
-    <p class="tagline">
-      Transforming complex data into compelling visual stories through interactive dashboards and user-centered design
-    </p>
-
-    <div class="badge-container">
-      <span class="badge">🎨 Data Visualization</span>
-      <span class="badge">⚛️ React Developer</span>
-      <span class="badge">☁️ AWS Certified</span>
-      <span class="badge">🎓 MS Computer Science</span>
-    </div>
-  </header>
-
-  <div class="container">
-    <h2 class="section-title">Featured Projects</h2>
-
-    <div class="filter-container">
-      <button class="filter-btn active" data-filter="all">All Projects</button>
-      <button class="filter-btn" data-filter="visualization">Data Viz</button>
-      <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
-    </div>
-
-    <div class="bento-grid" id="projects-grid">
-      <div class="project-card" data-category="visualization">
-        <div class="project-icon">📊</div>
-        <h3>Content Performance Analytics Dashboard</h3>
-        <p>
-          Interactive dashboard visualizing engagement metrics across 15+ regions and 50+ content categories.
-          Built with thoughtful aggregation logic, responsive design, and data storytelling principles.
-        </p>
-        <div class="tech-tags">
-          <span class="tech-tag">React</span>
-          <span class="tech-tag">Recharts</span>
-          <span class="tech-tag">JavaScript</span>
-          <span class="tech-tag">Vite</span>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-inner">
+        <!-- Profile picture with floating effect and organic blob mask -->
+        <div class="profile-container">
+          <div class="profile-glow"></div>
+          <img src="images/IMG_4849.jpeg" alt="Harshini Chowdary" class="profile-image" />
         </div>
-        <div class="project-links">
-          <a href="https://content-performance-dashboard-mu.vercel.app/" class="project-link">Live Demo →</a>
-          <a href="https://github.com/harshini090/content-performance-dashboard" class="project-link" target="_blank" rel="noreferrer">GitHub →</a>
+        
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="title-line">Harshini Chowdary</span>
+            <span class="title-line">Kilari</span>
+          </h1>
+          
+          <p class="hero-subtitle">Data Visualization & Frontend Development</p>
+          
+          <div class="hero-description">
+            <p>Transforming complex data into compelling visual stories through interactive dashboards and user-centered design. Currently pursuing MS in Computer Science with AWS certification and a passion for creating intuitive digital experiences.</p>
+          </div>
+          
+          <div class="hero-meta">
+            <span class="meta-item">MS Computer Science</span>
+            <span class="meta-divider">·</span>
+            <span class="meta-item">AWS Certified</span>
+            <span class="meta-divider">·</span>
+            <span class="meta-item">React Developer</span>
+          </div>
         </div>
       </div>
-
-      <div class="project-card" data-category="fullstack">
-  <div class="project-icon">🖥️</div>
-  <h3>Solstice Pod Quick Connect Guide</h3>
-  <p>
-    Interactive quick-connect website for UC classrooms. Device-based steps (Windows/Mac/Mobile),
-    clean UI, and easy navigation so students/faculty can share screens fast.
-  </p>
-  <div class="tech-tags">
-    <span class="tech-tag">HTML</span>
-    <span class="tech-tag">CSS</span>
-    <span class="tech-tag">JavaScript</span>
-    <span class="tech-tag">GitHub Pages</span>
-  </div>
-  <div class="project-links">
-    <a href="https://solsticeguide.vercel.app/" class="project-link" target="_blank" rel="noreferrer">Live Demo →</a>
-    <a href="https://github.com/harshini090/Solsticeguide" class="project-link" target="_blank" rel="noreferrer">GitHub →</a>
-  </div>
-</div>
-
-
-      <div class="project-card" data-category="fullstack">
-        <div class="project-icon">🏘️</div>
-        <h3>Real Estate Management System</h3>
-        <p>
-          Full-stack platform integrating data from APIs and relational databases, serving 1000+ data points daily.
-          Features admin dashboards with property analytics and transaction visualizations.
-        </p>
-        <div class="tech-tags">
-          <span class="tech-tag">Django</span>
-          <span class="tech-tag">PostgreSQL</span>
-          <span class="tech-tag">REST APIs</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/harshini090/MYHackathon" class="project-link" target="_blank" rel="noreferrer">GitHub →</a>
-        </div>
+      
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator">
+        <span>Scroll to explore</span>
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <path d="M6 1V11M6 11L11 6M6 11L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
       </div>
+    </section>
 
-      <div class="project-card" data-category="fullstack">
-        <div class="project-icon">🧘</div>
-        <h3>Kokoro Wellness App</h3>
-        <p>
-          Wellness tracking application with interactive mood visualizations and progress charts.
-          Designed with simplicity, data accessibility, and user experience at the core.
-        </p>
-        <div class="tech-tags">
-          <span class="tech-tag">Svelte</span>
-          <span class="tech-tag">Node.js</span>
-          <span class="tech-tag">Express</span>
-          <span class="tech-tag">Chart.js</span>
+    <!-- Work Section -->
+    <section class="work-section" id="work">
+      <div class="section-container">
+        <header class="section-header">
+          <h2 class="section-title">Selected Work</h2>
+          <p class="section-subtitle">A curated collection of recent projects</p>
+        </header>
+
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="visualization">Visualization</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
         </div>
-        <div class="project-links">
-          <a href="https://kokoro-35lbfoxj7-harshs-projects-5bb15c7b.vercel.app/" class="project-link">View Details →</a>
-          <a href="https://github.com/harshini090/kokoro" class="project-link" target="_blank" rel="noreferrer">GitHub →</a>
-        </div>
-      </div>
-    </div>
-    <h2 class="section-title">Experience</h2>
-    <div class="experience-timeline">
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <div>
-              <h3>Cloud Infrastructure Intern</h3>
-              <p class="company">Find Me LLC • Remote</p>
+
+        <div class="projects-grid">
+          <!-- Project 01 -->
+          <article class="project-card" data-category="visualization">
+            <div class="project-visual">
+              <div class="project-number">01</div>
+              <img
+                class="project-theme-icon"
+                src="images/IMG_0102_transparent.png"
+                data-dark="images/IMG_0102_transparent.png"
+                data-light="images/IMG_0103_transparent.png"
+                alt="Content Performance Analytics"
+              />
+              <div class="project-gradient"></div>
             </div>
-            <span class="timeline-date">Dec 2025 - Present</span>
-          </div>
-          <ul class="experience-bullets">
-            <li>Support backend cloud infrastructure on AWS using EC2, S3, IAM, VPC, and Lambda services</li>
-            <li>Monitor system performance metrics and create dashboards for tracking service reliability</li>
-            <li>Document API architectures and deployment workflows for engineering team collaboration</li>
-          </ul>
-          <div class="tech-tags">
-            <span class="tech-tag">AWS</span>
-            <span class="tech-tag">Lambda</span>
-            <span class="tech-tag">EC2</span>
-            <span class="tech-tag">S3</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <div>
-              <h3>Classroom Technology Assistant</h3>
-              <p class="company">University of Cincinnati, College of Nursing</p>
+            <div class="project-content">
+              <h3 class="project-title">Content Performance Analytics</h3>
+              <p class="project-description">
+                Interactive dashboard visualizing engagement metrics across 15+ regions and 50+ content categories. Built with thoughtful aggregation logic, responsive design, and data storytelling principles.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Recharts</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Vite</span>
+              </div>
+              <div class="project-links">
+                <a href="https://content-performance-dashboard-mu.vercel.app/" class="project-link" target="_blank">
+                  View Project
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <a href="https://github.com/harshini090/content-performance-dashboard" class="project-link secondary" target="_blank">
+                  GitHub
+                </a>
+              </div>
             </div>
-            <span class="timeline-date">Nov 2025 - Present</span>
-          </div>
-          <ul class="experience-bullets">
-            <li>Deliver Tier II technical support for 20+ technology-enabled classrooms with Windows and macOS systems</li>
-            <li>Install and maintain classroom hardware, PCs, peripherals, and AV equipment to minimize downtime</li>
-            <li>Troubleshoot network connectivity, software compatibility, and hardware failures</li>
-          </ul>
-          <div class="tech-tags">
-            <span class="tech-tag">Windows</span>
-            <span class="tech-tag">macOS</span>
-            <span class="tech-tag">Hardware Support</span>
-          </div>
-        </div>
-      </div>
+          </article>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <div>
-              <h3>Graduate Assistant - IT Support & Documentation</h3>
-              <p class="company">University of Cincinnati, CEAS</p>
+          <!-- Project 02 -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-visual">
+              <div class="project-number">02</div>
+              <img
+                class="project-theme-icon"
+                src="images/IMG_0102_transparent.png"
+                data-dark="images/IMG_0102_transparent.png"
+                data-light="images/IMG_0103_transparent.png"
+                alt="Solstice Pod Quick Connect"
+              />
+              <div class="project-gradient"></div>
             </div>
-            <span class="timeline-date">Dec 2024 - Oct 2025</span>
-          </div>
-          <ul class="experience-bullets">
-            <li>Provided technical support for 100+ Windows endpoints using ServiceNow ticketing workflows</li>
-            <li>Managed Active Directory accounts, OS imaging, and SCCM deployments for faculty and staff</li>
-            <li>Created technical documentation and knowledge base articles for recurring IT issues</li>
-          </ul>
-          <div class="tech-tags">
-            <span class="tech-tag">ServiceNow</span>
-            <span class="tech-tag">Active Directory</span>
-            <span class="tech-tag">SCCM</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <div>
-              <h3>Research Assistant - Data Engineering</h3>
-              <p class="company">KL University</p>
+            <div class="project-content">
+              <h3 class="project-title">Solstice Pod Quick Connect</h3>
+              <p class="project-description">
+                Interactive quick-connect guide for UC classrooms with device-based navigation. Clean interface designed for seamless screen sharing across Windows, Mac, and mobile platforms.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">GitHub Pages</span>
+              </div>
+              <div class="project-links">
+                <a href="https://solsticeguide.vercel.app/" class="project-link" target="_blank">
+                  View Project
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <a href="https://github.com/harshini090/Solsticeguide" class="project-link secondary" target="_blank">
+                  GitHub
+                </a>
+              </div>
             </div>
-            <span class="timeline-date">Jun 2023 - May 2024</span>
-          </div>
-          <ul class="experience-bullets">
-            <li>Developed Python pipelines processing 10,000+ audio records with data preprocessing automation</li>
-            <li>Created visualization scripts to communicate research findings to non-technical stakeholders</li>
-            <li>Reduced data preprocessing time by 35% through parallel processing optimization</li>
-          </ul>
-          <div class="tech-tags">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">Pandas</span>
-            <span class="tech-tag">Data Processing</span>
-          </div>
-        </div>
-      </div>
+          </article>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <div>
-              <h3>Software Development Intern</h3>
-              <p class="company">Juniper Networks • Remote</p>
+          <!-- Project 03 -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-visual">
+              <div class="project-number">03</div>
+              <img
+                class="project-theme-icon"
+                src="images/IMG_0102_transparent.png"
+                data-dark="images/IMG_0102_transparent.png"
+                data-light="images/IMG_0103_transparent.png"
+                alt="Real Estate Management System"
+              />
+              <div class="project-gradient"></div>
             </div>
-            <span class="timeline-date">Dec 2022 - Feb 2023</span>
+            <div class="project-content">
+              <h3 class="project-title">Real Estate Management System</h3>
+              <p class="project-description">
+                Full-stack platform integrating APIs and relational databases, serving 1000+ data points daily. Features admin dashboards with property analytics and transaction visualizations.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Django</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">REST APIs</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/harshini090/MYHackathon" class="project-link" target="_blank">
+                  View on GitHub
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 04 -->
+          <article class="project-card" data-category="visualization fullstack">
+            <div class="project-visual">
+              <div class="project-number">04</div>
+              <img
+                class="project-theme-icon"
+                src="images/IMG_0102_transparent.png"
+                data-dark="images/IMG_0102_transparent.png"
+                data-light="images/IMG_0103_transparent.png"
+                alt="Weather Data Application"
+              />
+              <div class="project-gradient"></div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Weather Data Application</h3>
+              <p class="project-description">
+                Data-driven weather application enabling real-time queries and historical analysis. Focused on data ingestion, transformation, and clear presentation through interactive UI.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React 18</span>
+                <span class="tag">APIs</span>
+                <span class="tag">Data Processing</span>
+                <span class="tag">Netlify</span>
+              </div>
+              <div class="project-links">
+                <a href="https://harshini-weather.netlify.app" class="project-link" target="_blank">
+                  View Project
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <a href="https://github.com/harshini090/weather-app" class="project-link secondary" target="_blank">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 05 -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-visual">
+              <div class="project-number">05</div>
+              <img
+                class="project-theme-icon"
+                src="images/IMG_0102_transparent.png"
+                data-dark="images/IMG_0102_transparent.png"
+                data-light="images/IMG_0103_transparent.png"
+                alt="Kokoro Wellness App"
+              />
+              <div class="project-gradient"></div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Kokoro Wellness App</h3>
+              <p class="project-description">
+                Wellness tracking application with interactive mood visualizations and progress charts. Designed with simplicity, data accessibility, and user experience at core.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Svelte</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Chart.js</span>
+              </div>
+              <div class="project-links">
+                <a href="https://kokoro-35lbfoxj7-harshs-projects-5bb15c7b.vercel.app/" class="project-link" target="_blank">
+                  View Project
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <a href="https://github.com/harshini090/kokoro" class="project-link secondary" target="_blank">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section" id="experience">
+      <div class="section-container">
+        <header class="section-header">
+          <h2 class="section-title">Experience</h2>
+          <p class="section-subtitle">Professional journey and contributions</p>
+        </header>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">Dec 2025 — Present</div>
+            <div class="timeline-content">
+              <div class="timeline-card">
+                <h3 class="timeline-title">Cloud Infrastructure Intern</h3>
+                <p class="timeline-company">Find Me LLC · Remote</p>
+                <ul class="timeline-list">
+                  <li>Support backend cloud infrastructure on AWS using EC2, S3, IAM, VPC, and Lambda services</li>
+                  <li>Monitor system performance metrics and create dashboards for tracking service reliability</li>
+                  <li>Document API architectures and deployment workflows for engineering collaboration</li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>AWS</span>
+                  <span>Lambda</span>
+                  <span>EC2</span>
+                  <span>S3</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <ul class="experience-bullets">
-            <li>Built backend automation services using Node.js and AWS, processing 10,000+ operational events daily</li>
-            <li>Increased test coverage by 25%, reducing production bugs by 35%</li>
-            <li>Participated in Agile sprints, code reviews, and CI/CD deployments</li>
-          </ul>
-          <div class="tech-tags">
-            <span class="tech-tag">Node.js</span>
-            <span class="tech-tag">AWS</span>
-            <span class="tech-tag">CI/CD</span>
+
+          <div class="timeline-item">
+            <div class="timeline-date">Nov 2025 — Present</div>
+            <div class="timeline-content">
+              <div class="timeline-card">
+                <h3 class="timeline-title">Classroom Technology Assistant</h3>
+                <p class="timeline-company">University of Cincinnati, College of Nursing</p>
+                <ul class="timeline-list">
+                  <li>Deliver Tier II technical support for 20+ technology-enabled classrooms</li>
+                  <li>Install and maintain classroom hardware to minimize downtime</li>
+                  <li>Troubleshoot network connectivity and hardware failures</li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>Windows</span>
+                  <span>macOS</span>
+                  <span>Hardware Support</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">Dec 2024 — Oct 2025</div>
+            <div class="timeline-content">
+              <div class="timeline-card">
+                <h3 class="timeline-title">Graduate Assistant — IT Support</h3>
+                <p class="timeline-company">University of Cincinnati, CEAS</p>
+                <ul class="timeline-list">
+                  <li>Provided technical support for 100+ Windows endpoints using ServiceNow</li>
+                  <li>Managed Active Directory accounts, OS imaging, and SCCM deployments</li>
+                  <li>Created technical documentation and knowledge base articles</li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>ServiceNow</span>
+                  <span>Active Directory</span>
+                  <span>SCCM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">Jun 2023 — May 2024</div>
+            <div class="timeline-content">
+              <div class="timeline-card">
+                <h3 class="timeline-title">Research Assistant — Data Engineering</h3>
+                <p class="timeline-company">KL University</p>
+                <ul class="timeline-list">
+                  <li>Developed Python pipelines processing 10,000+ audio records with automation</li>
+                  <li>Created visualization scripts to communicate research findings</li>
+                  <li>Reduced data preprocessing time by 35% through optimization</li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>Python</span>
+                  <span>Pandas</span>
+                  <span>Data Processing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">Dec 2022 — Feb 2023</div>
+            <div class="timeline-content">
+              <div class="timeline-card">
+                <h3 class="timeline-title">Software Development Intern</h3>
+                <p class="timeline-company">Juniper Networks · Remote</p>
+                <ul class="timeline-list">
+                  <li>Built backend automation services using Node.js and AWS</li>
+                  <li>Increased test coverage by 25%, reducing production bugs by 35%</li>
+                  <li>Participated in Agile sprints, code reviews, and CI/CD deployments</li>
+                </ul>
+                <div class="timeline-tags">
+                  <span>Node.js</span>
+                  <span>AWS</span>
+                  <span>CI/CD</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <h2 class="section-title">Certifications</h2>
+    <!-- Certifications & Skills Combined Section -->
+    <section class="credentials-section">
+      <div class="section-container">
+        <div class="credentials-grid">
+          <!-- Certifications -->
+          <div class="credentials-group">
+            <h2 class="group-title">Certifications</h2>
+            <div class="cert-list">
+              <a href="https://www.credly.com/badges/2ca4877f-64ac-421d-9487-301499a9e147/public_url" target="_blank" class="cert-item">
+                <div class="cert-content">
+                  <h3>AWS Certified Developer — Associate</h3>
+                  <p>Amazon Web Services · 2026</p>
+                </div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M2 14L14 2M14 2H5M14 2V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="https://www.credly.com/badges/32cd2652-9638-4b66-a4da-b5023685d4b1/public_url" target="_blank" class="cert-item">
+                <div class="cert-content">
+                  <h3>AWS Certified Cloud Practitioner</h3>
+                  <p>Amazon Web Services · 2026</p>
+                </div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M2 14L14 2M14 2H5M14 2V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
 
-<div class="certifications-grid">
-
-  <!-- AWS Developer -->
-  <a class="cert-link"
-     href="https://www.credly.com/badges/2ca4877f-64ac-421d-9487-301499a9e147/public_url"
-     target="_blank"
-     rel="noreferrer">
-    <div class="cert-card">
-      <div class="cert-icon">☁️</div>
-      <h3>AWS Certified Developer – Associate</h3>
-      <p class="cert-issuer">Amazon Web Services</p>
-      <p class="cert-date">2026</p>
-    </div>
-  </a>
-
-  <!-- AWS Cloud Practitioner -->
-  <a class="cert-link"
-     href="https://www.credly.com/badges/32cd2652-9638-4b66-a4da-b5023685d4b1/public_url"
-     target="_blank"
-     rel="noreferrer">
-    <div class="cert-card">
-      <div class="cert-icon">☁️</div>
-      <h3>AWS Certified Cloud Practitioner</h3>
-      <p class="cert-issuer">Amazon Web Services</p>
-      <p class="cert-date">2026</p>
-    </div>
-  </a>
-</div>
-
-
-    <h2 class="section-title">Technical Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-category">
-        <h3>Frontend & Visualization</h3>
-        <div class="skill-items">
-          <span class="skill-item">React</span>
-          <span class="skill-item">JavaScript</span>
-          <span class="skill-item">Recharts</span>
-          <span class="skill-item">Svelte</span>
-          <span class="skill-item">HTML/CSS</span>
-          <span class="skill-item">Vite</span>
+          <!-- Technical Skills -->
+          <div class="credentials-group">
+            <h2 class="group-title">Technical Skills</h2>
+            <div class="skills-list">
+              <div class="skill-category">
+                <h4>Frontend & Visualization</h4>
+                <div class="skill-tags">
+                  <span>React</span>
+                  <span>JavaScript</span>
+                  <span>Recharts</span>
+                  <span>Svelte</span>
+                  <span>HTML/CSS</span>
+                  <span>Vite</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4>Backend & Database</h4>
+                <div class="skill-tags">
+                  <span>Node.js</span>
+                  <span>Django</span>
+                  <span>REST APIs</span>
+                  <span>PostgreSQL</span>
+                  <span>Python</span>
+                  <span>SQL</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4>Cloud & DevOps</h4>
+                <div class="skill-tags">
+                  <span>AWS</span>
+                  <span>EC2</span>
+                  <span>S3</span>
+                  <span>Lambda</span>
+                  <span>Git/GitHub</span>
+                  <span>CI/CD</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4>Design & Tools</h4>
+                <div class="skill-tags">
+                  <span>Figma</span>
+                  <span>UI/UX</span>
+                  <span>Data Storytelling</span>
+                  <span>Agile</span>
+                  <span>Typography</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="skill-category">
-        <h3>Backend & Database</h3>
-        <div class="skill-items">
-          <span class="skill-item">Node.js</span>
-          <span class="skill-item">Django</span>
-          <span class="skill-item">REST APIs</span>
-          <span class="skill-item">PostgreSQL</span>
-          <span class="skill-item">Python</span>
-          <span class="skill-item">SQL</span>
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="section-container">
+        <div class="contact-inner">
+          <h2 class="contact-title">Let's Connect</h2>
+          <p class="contact-description">
+            Currently seeking internship opportunities in data visualization, frontend development, and full-stack engineering. Let's build something exceptional together.
+          </p>
+          
+          <div class="contact-links">
+            <a href="mailto:harshinichowdarykilari@gmail.com" class="contact-link">
+              <span>Email</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M2 14L14 2M14 2H5M14 2V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/harshinichowdarykilari" target="_blank" class="contact-link">
+              <span>LinkedIn</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M2 14L14 2M14 2H5M14 2V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://github.com/harshini090" target="_blank" class="contact-link">
+              <span>GitHub</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M2 14L14 2M14 2H5M14 2V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="resumedv.pdf" class="contact-link" download>
+              <span>Resume</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 2V12M8 12L12 8M8 12L4 8M2 14H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="skill-category">
-        <h3>Cloud & DevOps</h3>
-        <div class="skill-items">
-          <span class="skill-item">AWS</span>
-          <span class="skill-item">EC2</span>
-          <span class="skill-item">S3</span>
-          <span class="skill-item">Lambda</span>
-          <span class="skill-item">Git/GitHub</span>
-          <span class="skill-item">CI/CD</span>
-        </div>
-      </div>
-
-      <div class="skill-category">
-        <h3>Design & Tools</h3>
-        <div class="skill-items">
-          <span class="skill-item">Figma</span>
-          <span class="skill-item">UI/UX</span>
-          <span class="skill-item">Data Storytelling</span>
-          <span class="skill-item">Agile</span>
-          <span class="skill-item">Typography</span>
-          <span class="skill-item">Color Theory</span>
-        </div>
-      </div>
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Harshini Chowdary Kilari. All rights reserved.</p>
     </div>
-
-    <div class="contact-section">
-      <h2 class="section-title">Let's Connect</h2>
-      <p style="max-width: 600px; margin: 0 auto; color: var(--text-dim);">
-        I'm currently seeking internship opportunities in data visualization, frontend development,
-        and full-stack engineering. Let's build something amazing together!
-      </p>
-      <div class="contact-links">
-        <a href="mailto:harshinichowdarykilari@gmail.com" class="contact-btn">📧 Email Me</a>
-        <a href="https://linkedin.com/in/harshinichowdarykilari" class="contact-btn" target="_blank" rel="noreferrer">💼 LinkedIn</a>
-        <a href="https://github.com/harshini090" class="contact-btn" target="_blank" rel="noreferrer">💻 GitHub</a>
-        <a href="resumedv.pdf" class="contact-btn" download>📄 Resume</a>
-      </div>
-    </div>
-  </div>
-
-  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+  </footer>
 
   <script src="script.js"></script>
 </body>
