@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harshini Chowdary Kilari — Portfolio</title>
+  <title>Harshini Chowdary Kilari — Full-Stack Developer & AI Enthusiast</title>
   
   <!-- Fonts: Distinctive serif for display + refined sans for body -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,10 +64,10 @@
             <span class="title-line">Kilari</span>
           </h1>
           
-          <p class="hero-subtitle">Data Visualization & Frontend Development</p>
+          <p class="hero-subtitle">Full-Stack Web Developer & AI Prompt Engineering Enthusiast</p>
           
           <div class="hero-description">
-            <p>Transforming complex data into compelling visual stories through interactive dashboards and user-centered design. Currently pursuing MS in Computer Science with AWS certification and a passion for creating intuitive digital experiences.</p>
+            <p>Building modern web applications with a passion for intuitive frontend experiences and robust backend architectures. Specializing in React, Django, and cloud infrastructure, while exploring the intersection of AI and development through prompt engineering and automation.</p>
           </div>
           
           <div class="hero-meta">
@@ -75,7 +75,7 @@
             <span class="meta-divider">·</span>
             <span class="meta-item">AWS Certified</span>
             <span class="meta-divider">·</span>
-            <span class="meta-item">React Developer</span>
+            <span class="meta-item">Frontend Enthusiast</span>
           </div>
         </div>
       </div>
@@ -94,20 +94,63 @@
       <div class="section-container">
         <header class="section-header">
           <h2 class="section-title">Selected Work</h2>
-          <p class="section-subtitle">A curated collection of recent projects</p>
+          <p class="section-subtitle">A curated collection of full-stack projects</p>
         </header>
 
         <div class="filter-container">
           <button class="filter-btn active" data-filter="all">All Projects</button>
-          <button class="filter-btn" data-filter="visualization">Visualization</button>
           <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="ai">AI-Powered</button>
         </div>
 
         <div class="projects-grid">
-          <!-- Project 01 -->
-          <article class="project-card" data-category="visualization">
+          <!-- Project 01 - NEW JOB TRACKER -->
+          <article class="project-card" data-category="fullstack">
             <div class="project-visual">
               <div class="project-number">01</div>
+              <div class="project-preview">
+                <!-- You'll add screenshots here -->
+                <div class="preview-placeholder">
+                  <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="9" y1="9" x2="15" y2="9"></line>
+                    <line x1="9" y1="13" x2="15" y2="13"></line>
+                    <line x1="9" y1="17" x2="13" y2="17"></line>
+                  </svg>
+                </div>
+              </div>
+              <div class="project-gradient"></div>
+              <div class="project-badge">In Development</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Job Application Tracker</h3>
+              <p class="project-description">
+                Production-ready full-stack application with secure authentication, email verification flow, and user-scoped data management. Features real-world backend patterns including JWT tokens, RESTful APIs, and scalable architecture ready for deployment.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Django</span>
+                <span class="tag">React</span>
+                <span class="tag">Vite</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">REST API</span>
+                <span class="tag">JWT Auth</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/harshini090/Job-tracker-fullstack" class="project-link" target="_blank">
+                  View on GitHub
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project-card" data-category="frontend ai">
+            <div class="project-visual">
+              <div class="project-number">02</div>
               <img
                 class="project-theme-icon"
                 src="images/IMG_0102_transparent.png"
@@ -120,13 +163,14 @@
             <div class="project-content">
               <h3 class="project-title">Content Performance Analytics</h3>
               <p class="project-description">
-                Interactive dashboard visualizing engagement metrics across 15+ regions and 50+ content categories. Built with thoughtful aggregation logic, responsive design, and data storytelling principles.
+                Interactive data visualization dashboard with intelligent aggregation algorithms and responsive design. Transforms complex metrics across 15+ regions into actionable insights through thoughtful UI/UX and data storytelling.
               </p>
               <div class="project-tags">
                 <span class="tag">React</span>
                 <span class="tag">Recharts</span>
                 <span class="tag">JavaScript</span>
                 <span class="tag">Vite</span>
+                <span class="tag">Data Viz</span>
               </div>
               <div class="project-links">
                 <a href="https://content-performance-dashboard-mu.vercel.app/" class="project-link" target="_blank">
@@ -142,10 +186,10 @@
             </div>
           </article>
 
-          <!-- Project 02 -->
-          <article class="project-card" data-category="fullstack">
+          <!-- Project 03 -->
+          <article class="project-card" data-category="frontend">
             <div class="project-visual">
-              <div class="project-number">02</div>
+              <div class="project-number">03</div>
               <img
                 class="project-theme-icon"
                 src="images/IMG_0102_transparent.png"
@@ -158,13 +202,13 @@
             <div class="project-content">
               <h3 class="project-title">Solstice Pod Quick Connect</h3>
               <p class="project-description">
-                Interactive quick-connect guide for UC classrooms with device-based navigation. Clean interface designed for seamless screen sharing across Windows, Mac, and mobile platforms.
+                Device-agnostic interactive guide with clean, intuitive navigation designed for UC classroom environments. Seamless cross-platform experience for Windows, Mac, and mobile users with focus on accessibility and user flow.
               </p>
               <div class="project-tags">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
                 <span class="tag">JavaScript</span>
-                <span class="tag">GitHub Pages</span>
+                <span class="tag">Responsive Design</span>
               </div>
               <div class="project-links">
                 <a href="https://solsticeguide.vercel.app/" class="project-link" target="_blank">
@@ -180,10 +224,10 @@
             </div>
           </article>
 
-          <!-- Project 03 -->
+          <!-- Project 04 -->
           <article class="project-card" data-category="fullstack">
             <div class="project-visual">
-              <div class="project-number">03</div>
+              <div class="project-number">04</div>
               <img
                 class="project-theme-icon"
                 src="images/IMG_0102_transparent.png"
@@ -196,12 +240,13 @@
             <div class="project-content">
               <h3 class="project-title">Real Estate Management System</h3>
               <p class="project-description">
-                Full-stack platform integrating APIs and relational databases, serving 1000+ data points daily. Features admin dashboards with property analytics and transaction visualizations.
+                Enterprise-grade platform with RESTful API architecture and PostgreSQL backend, processing 1000+ daily transactions. Features comprehensive admin dashboards with real-time analytics and property management workflows.
               </p>
               <div class="project-tags">
                 <span class="tag">Django</span>
                 <span class="tag">PostgreSQL</span>
                 <span class="tag">REST APIs</span>
+                <span class="tag">Python</span>
               </div>
               <div class="project-links">
                 <a href="https://github.com/harshini090/MYHackathon" class="project-link" target="_blank">
@@ -214,10 +259,10 @@
             </div>
           </article>
 
-          <!-- Project 04 -->
-          <article class="project-card" data-category="visualization fullstack">
+          <!-- Project 05 -->
+          <article class="project-card" data-category="fullstack frontend">
             <div class="project-visual">
-              <div class="project-number">04</div>
+              <div class="project-number">05</div>
               <img
                 class="project-theme-icon"
                 src="images/IMG_0102_transparent.png"
@@ -230,7 +275,7 @@
             <div class="project-content">
               <h3 class="project-title">Weather Data Application</h3>
               <p class="project-description">
-                Data-driven weather application enabling real-time queries and historical analysis. Focused on data ingestion, transformation, and clear presentation through interactive UI.
+                API-driven weather platform with real-time data processing and interactive UI. Demonstrates modern React patterns, state management, and responsive design principles with clean data presentation.
               </p>
               <div class="project-tags">
                 <span class="tag">React 18</span>
@@ -252,10 +297,10 @@
             </div>
           </article>
 
-          <!-- Project 05 -->
-          <article class="project-card" data-category="fullstack">
+          <!-- Project 06 -->
+          <article class="project-card" data-category="fullstack frontend">
             <div class="project-visual">
-              <div class="project-number">05</div>
+              <div class="project-number">06</div>
               <img
                 class="project-theme-icon"
                 src="images/IMG_0102_transparent.png"
@@ -268,12 +313,13 @@
             <div class="project-content">
               <h3 class="project-title">Kokoro Wellness App</h3>
               <p class="project-description">
-                Wellness tracking application with interactive mood visualizations and progress charts. Designed with simplicity, data accessibility, and user experience at core.
+                Wellness tracking application with dynamic data visualizations using Chart.js. Built with Svelte for optimal performance, featuring mood tracking, progress charts, and user-focused design patterns.
               </p>
               <div class="project-tags">
                 <span class="tag">Svelte</span>
                 <span class="tag">Node.js</span>
                 <span class="tag">Chart.js</span>
+                <span class="tag">UX Design</span>
               </div>
               <div class="project-links">
                 <a href="https://kokoro-35lbfoxj7-harshs-projects-5bb15c7b.vercel.app/" class="project-link" target="_blank">
@@ -439,21 +485,21 @@
             <h2 class="group-title">Technical Skills</h2>
             <div class="skills-list">
               <div class="skill-category">
-                <h4>Frontend & Visualization</h4>
+                <h4>Frontend Development</h4>
                 <div class="skill-tags">
                   <span>React</span>
-                  <span>JavaScript</span>
-                  <span>Recharts</span>
+                  <span>JavaScript/ES6+</span>
+                  <span>HTML5/CSS3</span>
                   <span>Svelte</span>
-                  <span>HTML/CSS</span>
                   <span>Vite</span>
+                  <span>Responsive Design</span>
                 </div>
               </div>
               <div class="skill-category">
-                <h4>Backend & Database</h4>
+                <h4>Backend & APIs</h4>
                 <div class="skill-tags">
-                  <span>Node.js</span>
                   <span>Django</span>
+                  <span>Node.js</span>
                   <span>REST APIs</span>
                   <span>PostgreSQL</span>
                   <span>Python</span>
@@ -463,22 +509,33 @@
               <div class="skill-category">
                 <h4>Cloud & DevOps</h4>
                 <div class="skill-tags">
-                  <span>AWS</span>
-                  <span>EC2</span>
-                  <span>S3</span>
-                  <span>Lambda</span>
+                  <span>AWS (EC2, S3, Lambda)</span>
                   <span>Git/GitHub</span>
                   <span>CI/CD</span>
+                  <span>Docker</span>
+                  <span>Vercel/Netlify</span>
                 </div>
               </div>
               <div class="skill-category">
-                <h4>Design & Tools</h4>
+                <h4>Design & AI Tools</h4>
                 <div class="skill-tags">
                   <span>Figma</span>
-                  <span>UI/UX</span>
-                  <span>Data Storytelling</span>
-                  <span>Agile</span>
-                  <span>Typography</span>
+                  <span>UI/UX Design</span>
+                  <span>Prompt Engineering</span>
+                  <span>Claude AI</span>
+                  <span>Stick</span>
+                  <span>Data Visualization</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4>Frameworks & Libraries</h4>
+                <div class="skill-tags">
+                  <span>Recharts</span>
+                  <span>Chart.js</span>
+                  <span>Tailwind CSS</span>
+                  <span>Bootstrap</span>
+                  <span>Pandas</span>
+                  <span>NumPy</span>
                 </div>
               </div>
             </div>
@@ -491,9 +548,9 @@
     <section class="contact-section" id="contact">
       <div class="section-container">
         <div class="contact-inner">
-          <h2 class="contact-title">Let's Connect</h2>
+          <h2 class="contact-title">Let's Build Something Great</h2>
           <p class="contact-description">
-            Currently seeking internship opportunities in data visualization, frontend development, and full-stack engineering. Let's build something exceptional together.
+            Currently seeking internship and full-time opportunities in full-stack development, frontend engineering, and AI-powered applications. Passionate about creating exceptional user experiences with modern web technologies.
           </p>
           
           <div class="contact-links">
@@ -529,7 +586,7 @@
 
   <footer class="footer">
     <div class="footer-inner">
-      <p>&copy; 2026 Harshini Chowdary Kilari. All rights reserved.</p>
+      <p>&copy; 2026 Harshini Chowdary Kilari. Crafted with passion for frontend excellence.</p>
     </div>
   </footer>
 
